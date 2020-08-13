@@ -6,10 +6,23 @@ compile_sass = true
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = ture
+highlight_code = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+theme = "zola-pickles"
+
+title = "Some Title"
+
+description = "a description"
+
 [extra]
 # Put all your custom variables here
+instantpage_enable = true
+
+# A line to display underneath the main title
+subtitle = "Example subtitle"
+
+# Text to display in the footer of the page
+copyright = "Copyright authors year"
