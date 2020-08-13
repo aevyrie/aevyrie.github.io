@@ -7,22 +7,44 @@ compile_sass = true
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "demain"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-theme = "zola-pickles"
+theme = "simple-dev-blog"
 
-title = "Some Title"
+title = "Option::Some(Blog)"
+description = "A simple dev blog."
 
-description = "a description"
+generate_feed = true
+
+taxonomies = [
+  { name = "tags" }
+]
 
 [extra]
-# Put all your custom variables here
-instantpage_enable = true
 
-# A line to display underneath the main title
-subtitle = "Example subtitle"
+nav = [
+  { name = "About", path = "/about/" },
+  { name = "Home", path = "/" }
+]
 
-# Text to display in the footer of the page
-copyright = "Copyright authors year"
+latest_text = "Latest post:"
+
+icon = "icon.png"
+profile_small = "icon.png"
+profile_large = "profile.jpg"
+
+accent = "#087EA5"
+accent_light = "#ddd"
+
+author = "John Doe"
+
+footer_about = """
+A simple dev-blog theme created by Bennett. You can follow him on [Github](https://github.com/bennetthardwick) (if you like).
+"""
+
+not_found_message = """
+This is not the page you're looking for... return back to [safety?](/)
+"""

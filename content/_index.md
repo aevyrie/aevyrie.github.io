@@ -1,6 +1,7 @@
 +++
-title = "List of blog posts"
-paginate_by = 5
+template = "blog.html"
+page_template = "blog-post.html"
 sort_by = "date"
-insert_anchor_links = "right"
 +++
+
+# Option::Some(Blog)
