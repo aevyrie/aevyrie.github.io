@@ -4,4 +4,4 @@ page_template = "blog-post.html"
 sort_by = "date"
 +++
 
-# Option::Some(Blog)
+## Blog
