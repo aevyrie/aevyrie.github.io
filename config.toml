@@ -15,7 +15,7 @@ build_search_index = false
 theme = "simple-dev-blog"
 
 title = "Developing Dilettante"
-description = "A simple dev blog."
+description = "Unrefined opinions on engineering & software."
 
 generate_feed = true
 
@@ -27,6 +27,7 @@ taxonomies = [
 
 nav = [
   { name = "About", path = "/about/" },
+  { name = "Blog", path = "/blog/" },
 ]
 
 latest_text = "Latest post:"
@@ -38,7 +39,7 @@ profile_large = "profile.jpg"
 accent = "#087EA5"
 accent_light = "#ddd"
 
-author = "John Doe"
+author = "Aevyrie Roessler"
 
 footer_about = """
 A dev-blog just for fun. My [Github](https://github.com/aevyrie).
