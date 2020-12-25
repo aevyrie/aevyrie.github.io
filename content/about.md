@@ -2,23 +2,32 @@
 template = "page.html"
 +++
 
+# Who are you? What are you doing inside my computer?
+
+Hi, I'm Aevyrie. The name of this blog/writey-space is a double entendre for the inspirational *"someone working on cultivating their casual interests"* and the self-derogatory *"programmer who doesn't know what they're doing"*. I'm shooting for the former, but usually end up closer to the latter. Good thing they aren't mutually exclusive.
+
 ---
-## dil·et·tante
 
-/ˌdiləˈtänt, diləˈtäntē/
-
-noun
+dil·et·tante:
 
 *a person having a superficial interest in an art or a branch of knowledge : DABBLER*
 
 ---
 
-<br/>
+This is a place for me to write about the topics that interest me. I don't expect anyone to read it. I'm hoping it encourages me to make things, discover new fascinations, practice my writing, and gives me a place to look back at what I've learned. I'm interested in the Rust ecosystem, computer graphics, and the intersection of Mechanical Engineering and Computer Science. Sometimes I enjoy illustration, photography, and graphic design. I use a computer and mouse to design consumer electronics and other things at my day job.
 
-## About
+### Contact
 
+Check out my [GitHub profile](https://github.com/aevyrie) if you want to see the software I write in my free time. You can connect with me on [LinkedIn](https://www.linkedin.com/in/aevyrie/) if that tickles your fancy. 
+
+### How it's made
+
+This is a static site generated with [Zola](https://www.getzola.org/), using a modified version of the [simple dev blog theme](https://github.com/bennetthardwick/simple-dev-blog-zola-starter), and deployed to the web with a [GitHub Action](https://github.com/marketplace/actions/zola-deploy-to-pages). You can find the source for this site [here](https://github.com/aevyrie/aevyrie.github.io).
+=======
 This is a place for me to write about the topics that interest me. I don't expect anyone to read it. I hope it encourages me to make things, discover new fascinations, and gives me a place to look back at what I've accomplished.
 
-I'm interested in the Rust ecosystem, computer graphics, and the intersection of Mechanical Engineering and Computer Science.
+### Licensing
 
+The text of this blog is licensed under [CC BY 4.0](../CC-BY-4_0.txt). Feel free to share, adapt, and quote the content, as long as you give attribution. All code snippets are licensed under [MIT](../MIT.txt).
+=======
 You can find my GitHub [here](https://github.com/aevyrie).
