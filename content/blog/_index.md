@@ -5,6 +5,3 @@ sort_by = "date"
 +++
 
 # An assortment of unrefined opinions on engineering & software.
-All views expressed are my own. I called dibs.
-
----

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://aevyrie.github.io"
+base_url = "https://adilettante.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -14,7 +14,7 @@ build_search_index = false
 
 theme = "simple-dev-blog"
 
-title = "Developing Dilettante"
+title = "a dilettante developer"
 description = "Unrefined opinions on engineering & software."
 
 generate_feed = true
@@ -27,6 +27,7 @@ taxonomies = [
 
 nav = [
   { name = "About", path = "/about/" },
+  { name = "Projects", path = "/projects/"},
   { name = "Blog", path = "/blog/" },
 ]
 
@@ -36,13 +37,13 @@ icon = "icon.png"
 profile_small = "icon.png"
 profile_large = "profile.jpg"
 
-accent = "#087EA5"
-accent_light = "#ddd"
+accent = "#007FAE"
+accent_light = "#eee"
 
 author = "Aevyrie Roessler"
 
 footer_about = """
-A dev-blog just for fun. My [Github](https://github.com/aevyrie).
+A blog by Aevyrie Roessler ~ [About](/about/) ~ [Github](https://www.github.com/aevyrie) ~ [LinkedIn](https://www.linkedin.com/in/aevyrie/)
 """
 
 not_found_message = """

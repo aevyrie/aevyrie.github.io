@@ -26,7 +26,7 @@
       {% set latest = blogs.pages.0 %}
       <div class="latest-container">
         {% if latest %}
-        {{ config.extra.latest_text }} "<a href="{{ latest.permalink }}">{{ latest.title }}</a>"
+        {{ config.extra.latest_text }} <a href="{{ latest.permalink }}">{{ latest.title }}</a>
         {% endif %}
       </div>
     {% endif %}
