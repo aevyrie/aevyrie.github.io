@@ -23,11 +23,7 @@ Check out my [GitHub profile](https://github.com/aevyrie) if you want to see the
 ### How it's made
 
 This is a static site generated with [Zola](https://www.getzola.org/), using a modified version of the [simple dev blog theme](https://github.com/bennetthardwick/simple-dev-blog-zola-starter), and deployed to the web with a [GitHub Action](https://github.com/marketplace/actions/zola-deploy-to-pages). You can find the source for this site [here](https://github.com/aevyrie/aevyrie.github.io).
-=======
-This is a place for me to write about the topics that interest me. I don't expect anyone to read it. I hope it encourages me to make things, discover new fascinations, and gives me a place to look back at what I've accomplished.
 
 ### Licensing
 
 The text of this blog is licensed under [CC BY 4.0](../CC-BY-4_0.txt). Feel free to share, adapt, and quote the content, as long as you give attribution. All code snippets are licensed under [MIT](../MIT.txt).
-=======
-You can find my GitHub [here](https://github.com/aevyrie).
