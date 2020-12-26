@@ -4,7 +4,7 @@ template = "page.html"
 
 # Who are you? What are you doing inside my computer?
 
-Hi, I'm Aevyrie. The name of this blog/writey-space is a double entendre for the inspirational *"someone working on cultivating their casual interests"* and the self-derogatory *"programmer who doesn't know what they're doing"*. I'm shooting for the former, but usually end up closer to the latter. Good thing they aren't mutually exclusive.
+Hi, I'm Aevyrie. The name of this blog/writey-space is a double entendre for the inspirational *"someone working on cultivating their casual interests"* and the self deprecating *"programmer who doesn't know what they're doing"*. I'm shooting for the former, but usually end up closer to the latter. Good thing they aren't mutually exclusive.
 
 ---
 
