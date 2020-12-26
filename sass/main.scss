@@ -13,6 +13,11 @@
   margin-bottom: 2rem;
 }
 
+body pre {
+  border-radius: 0.4em;
+  border: 1px solid #eee;
+}
+
 .post-title {
 
   .tags {
@@ -31,6 +36,7 @@
 .footer-rule {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .related-container {

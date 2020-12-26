@@ -85,12 +85,6 @@
 
   <hr class="footer-rule" />
 
-  {% if config.extra.footer_about %}
-    <div class="footer-about">
-      {{ config.extra.footer_about | markdown | safe }}
-    </div>
-  {% endif %}
-
   <div class="related-container">
 
     {% if page.earlier %}
@@ -109,4 +103,9 @@
 
   </div>
 
+{% if config.extra.footer_about %}
+  <div class="footer-about">
+  {{ config.extra.footer_about | markdown | safe }}
+  </div>
+{% endif %}
 {% endblock content %}

@@ -43,7 +43,7 @@ accent_light = "#eee"
 author = "Aevyrie Roessler"
 
 footer_about = """
-A blog by Aevyrie Roessler ~ [About](/about/) ~ [Github](https://www.github.com/aevyrie) ~ [LinkedIn](https://www.linkedin.com/in/aevyrie/)
+© 2020 Aevyrie Roessler ~ [About](/about/) ~ [Github](https://www.github.com/aevyrie) ~ [LinkedIn](https://www.linkedin.com/in/aevyrie/)
 """
 
 not_found_message = """

@@ -3,7 +3,7 @@
 body {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 20px;
-  line-height: 1.7;
+  //line-height: 1.7;
   padding: 2rem;
   min-height: 100vh;
 }
@@ -42,6 +42,14 @@ body {
     overflow: auto;
     padding: 1rem;
     max-width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  p, ul, ol, .post-preview, .content, h1, h2, h3, h4, h5, header {
+    line-height: 1.7;
+  }
+  code {
+    line-height: 1;
   }
 }
 
@@ -49,7 +57,9 @@ code {
   background: hsla(0, 0%, 0%, 0.04);
   padding: 0.2em 0;
   font-family: 'Fira Code', 'Courier New', Courier, monospace;
-  font-size: medium;
+  font-size: small;
+  font-weight: bold;
+  line-height: 1;
 
   pre > & {
     background: none;
