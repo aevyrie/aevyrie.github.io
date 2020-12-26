@@ -18,7 +18,7 @@ This is a place for me to write about the topics that interest me. I don't expec
 
 ### Contact
 
-Check out my [GitHub profile](https://github.com/aevyrie) if you want to see the software I write in my free time. You can connect with me on [LinkedIn](https://www.linkedin.com/in/aevyrie/) if that tickles your fancy. 
+You can contact me using my first name `@gmail.com`. Check out my [GitHub profile](https://github.com/aevyrie) if you want to see the software I write in my free time. You can connect with me on [LinkedIn](https://www.linkedin.com/in/aevyrie/) if that tickles your fancy. 
 
 ### How it's made
 
