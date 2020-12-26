@@ -5,7 +5,7 @@ draft = false
 tags = [ "Meta" ]
 +++
 
-I'd like to start organizing and publishing my personal notes, with the goal of condensing these thoughts into something more concrete and shareable. The topics I'm most interested in writing about are roughly:
+I'd like to start organizing and publishing my personal notes, with the goal of condensing these thoughts into something more concrete and shareable. The topics I'm most interested in writing about are, in no particular order:
 
 * The Rust programming language
 * Mechanical Engineering
@@ -35,5 +35,11 @@ fn fancy_function(input: &bool) -> &str {
     }
 }
 ```
+
+Now to test Katex support inline: {{ katex(body="\KaTeX") }}. Next let's try wrapping the line to make sure the text flows properly. Finally, let's try some Katex in block form:
+
+{% katex(block=true) %}
+\sum_{\mathclap{1\le i\le j\le n}} x_{ij}
+{% end %}
 
 I expect posts will be somewhat sporadic, and the content will probably only be interesting to a select few, or only myself. If you find yourself with common interests, I'm always happy to chat. Check the [about](/about/) page to get in contact!
