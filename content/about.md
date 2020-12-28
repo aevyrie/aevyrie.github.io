@@ -26,4 +26,4 @@ This is a static site generated with [Zola](https://www.getzola.org/), using a m
 
 ### Licensing
 
-The text of this blog is licensed under [CC BY 4.0](../licenses/CC-BY-4_0.txt). Feel free to share, adapt, and quote the content, as long as you give attribution. All code snippets are licensed under [MIT](../licenses/MIT.txt).
+The text of this blog is licensed under [CC BY 4.0](../licenses/CC-BY-4_0.txt) unless otherwise specified. Feel free to share, adapt, and quote the content, as long as you give attribution. All code snippets are licensed under [MIT](../licenses/MIT.txt) unless otherwise specified.
