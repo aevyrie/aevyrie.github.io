@@ -10,7 +10,7 @@ highlight_code = true
 highlight_theme = "demain"
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 theme = "simple-dev-blog"
 
@@ -19,15 +19,13 @@ description = "Unrefined opinions on engineering & software."
 
 generate_feed = true
 
-taxonomies = [
-  { name = "tags" }
-]
+taxonomies = [{ name = "tags" }]
 
 [extra]
 
 nav = [
   { name = "About", path = "/about/" },
-  { name = "Projects", path = "/projects/"},
+  { name = "Projects", path = "/projects/" },
   { name = "Blog", path = "/blog/" },
 ]
 
@@ -41,13 +39,13 @@ icon = "icon.png"
 profile_small = "icon.png"
 profile_large = "profile.jpg"
 
-accent = "#007FAE"
+accent = "#D20048"
 accent_light = "#eee"
 
 author = "Aevyrie Roessler"
 
 footer_about = """
-© 2020 Aevyrie Roessler ~ [About](/about/) ~ [Github](https://www.github.com/aevyrie) ~ [LinkedIn](https://www.linkedin.com/in/aevyrie/)
+© 2021 Aevyrie Roessler ~ [About](/about/) ~ [Github](https://www.github.com/aevyrie) ~ [LinkedIn](https://www.linkedin.com/in/aevyrie/)
 """
 
 not_found_message = """

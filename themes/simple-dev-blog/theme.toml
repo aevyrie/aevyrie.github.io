@@ -9,10 +9,7 @@ generate_feed = true
 
 [extra]
 
-nav = [
-  { name = "About", path = "/about/" },
-  { name = "Blog", path = "/blog/" }
-]
+nav = [{ name = "About", path = "/about/" }, { name = "Blog", path = "/blog/" }]
 
 icon = "icon.png"
 profile_small = "icon.png"
