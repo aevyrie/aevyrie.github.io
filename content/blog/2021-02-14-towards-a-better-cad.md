@@ -1,5 +1,5 @@
 +++
-title = "Towards a Better CAD"
+title = "Rethinking CAD: Past, Present, and an Aspirational Future"
 draft = false
 [taxonomies] 
 tags = [ "CAD" ]
@@ -55,7 +55,9 @@ Why aren't design constraint verifications a standard procedure for the part rel
 
 Why is the mouse still our primary input method? Drawing is a powerful method of visual communication and understanding, often the first tool we grab when we need to communicate our ideas, yet the digital drafting table is nowhere in sight.
 
-The boring, unsatisfying, answer to these (and most) questions is likely cost and risk<sup>2</sup>. Granted, *parts* of these features exist in *some* systems, but the industry as a whole doesn't seem to be taking a critical look at *why* we use this software the way we use it. It looks a lot like the sheer momentum of historical cruft is carrying us down an inevitable and unchanging path of developing incremental improvements to proprietary applications wrapped around proprietary b-rep kernels. Even startups like OnShape<sup>3</sup> aren't taking a truly de novo approach. As much as I admire the work that has gone into building a new CAD offering, OnShape ultimately feels like someone took the status quo of CAD, shoved it in the cloud, and slapped some SaaS on it.
+The boring, unsatisfying, answer to these (and most) questions is likely cost and risk<sup>2</sup>. Granted, *parts* of these features exist in *some* systems, but the industry as a whole doesn't seem to be taking a critical look at *why* we use this software the way we use it. It looks a lot like the sheer momentum of historical cruft is carrying us down an inevitable and unchanging path of developing incremental improvements to proprietary applications wrapped around proprietary b-rep kernels. 
+
+Even startups like OnShape<sup>3</sup> aren't taking a truly de novo approach. As much as I admire the work that has gone into building a new CAD offering, OnShape ultimately feels like someone took the status quo of CAD, sprinkled modern niceties on it, and slapped some SaaS on it.
 
 What if we took a step back and rethought CAD? Maybe we could take these frustrations, the lessons of the past, and steal some ideas from the software engineers to make something truly *better*.
 
@@ -104,7 +106,7 @@ The *Initial Graphics Exchange Specification* (IGES) format is the oldest 3D CAD
 
 Perhaps the most well-known format in the CAD world is the ISO 10303 *Standard for the Exchange of Product model data* (STEP). The STEP format aims to add manufacturing data, including tolerances and manufacturing methods, to the 3D file exchange format. The STEP format is absolutely gargantuan, and in my opinion, tries to do so much that it's far too complex to approach with a green field implementation. If you don't believe me, [check this out](http://www.steptools.com/stds/stp_expg/arm.html), and zoom out of the page as far as your browser will allow. The STEP specification was first released in 1994, and is one of the most common ways to transfer CAD data between engineers and vendors. It is also incredibly common for STEP files to have broken surfaces that need to be manually repaired. Because the format is owned by the ISO standards body, its specification is not free.
 
-The Parasolid format (*.x_b, *.x_t) gets an honorable mention here as possibly the most common proprietary (non-interchange)) format, born out of the Parasolid geometry kernel. CAD packages with the Parasolid kernel can communicate in this format natively. You can find the format specification by searching for the "Parasolid XT Format Reference".
+The Parasolid format (*.x_b, *.x_t) gets an honorable mention here as possibly the most common proprietary format, born out of the Parasolid geometry kernel. CAD packages with the Parasolid kernel can communicate in this format natively. You can find the format specification by searching for the "Parasolid XT Format Reference" in your friendly neighborhod search engine of choice.
 
 ### Geometric Modeling Kernels
 
@@ -119,7 +121,8 @@ A b-rep geometry kernel is complex and fraught with edge cases. For this reason,
 * Autodesk's Inventor and Fusion 360 use their own ShapeManager kernel, which was forked from ACIS in 2001.
 * PTC Creo products have a particularly confusing history. Their direct modeling package known as Creo Elements/Direct came from an acquisition of CoCreate, which was initially developed by HP. Creo Parametric was previously Pro/Engineer, which was merged with Elements/Direct to become Wildfire, and finally just "Creo".
 * OnShape, a newcomer, licenses Parasolid. OnShape was recently bought by PTC.
-* All of these kernels can (to my knowledge) trace their heritage through ACIS and Parasolid to the first generation professional modeling kernel, Romulus, released in 1978. In turn, this can be traced back to BUILD, created in 1969 as part of Ian Braid's PhD thesis.
+
+All of these kernels can (to my knowledge) trace their heritage through ACIS and Parasolid to the first generation professional modeling kernel, Romulus, released in 1978. In turn, this can be traced back to BUILD, created in 1969 as part of Ian Braid's PhD thesis.
 
 ## Where I hope we're headed
 
