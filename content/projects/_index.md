@@ -4,4 +4,4 @@ page_template = "blog-post.html"
 sort_by = "date"
 +++
 
-# Things I've made.
+# Things I've made
