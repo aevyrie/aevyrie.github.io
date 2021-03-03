@@ -19,7 +19,7 @@ This article, then, is the perspective of an experienced, frustrated CAD user. I
 
 ---
 
-# Where we are
+## Where we are
 
 Last year, I really began to question CAD. I like to think that sometime about 10 months ago, I experienced a feature-tree-breaking error for the 1,000th time. When that 999 rolled over, it dislodged something in my brain that was preventing me from acknowledging how infuriatingly exhausting it is. Why do we have to put up with this? Why can't we have nice things?
 
@@ -27,7 +27,7 @@ It's no coincidence that at the same time, I was really starting to get into [Ru
 
 As much as I see software engineers criticizing the state of their field, there is something to be said about their willingness to try new tools and develop processes to both prevent repeating mistakes, and automatically verify correctness. Not only that, but many of the most prominent tools and frameworks are free and open source, even in the commercial space! Despite the fact that you can draw parallels between the design process of digital and physical systems, the software tooling we use for mechanical design is downright archaic in comparison.
 
-## A cargo cult
+### A cargo cult
 
 I find it rare that design engineers have an understanding of their digital design tools; many seem apathetic to understanding how CAD systems work. CAD is often a topic of shared misery, the *lingua franca* of despair for design engineers who might otherwise work in completely disparate industries. Yet somehow, engineers are ardent defenders of their CAD platform of choice, like victims of some perverse software-based Stockholm Syndrome.
 
@@ -43,7 +43,7 @@ Perhaps I need to be the change I want to see in the world, stop complaining, an
 
 After dipping your toes into the jacuzzi that is open source learning material and community, trying to learn about CAD software systems is like diving into a wave pool of molten salt.
 
-## The bad and the ugly
+### The bad and the ugly
 
 CAD is supposed to bring correctness and efficiency to our work. While it succeeds at rendering arbitrary views and sections with inhuman precision, it also results in huge amounts of complexity. While 3D representation is a challenging problem, I'm not aware of any axiom that states it must always have a poor user experience. Further, there is no reason to believe our current workflows are somehow optimal, or anything more than *good enough* software glued together through [decades of acquisitions](https://web.archive.org/web/20100130061758/http://www.ptc.com/company/history-and-acquisitions.htm).
 
@@ -67,11 +67,11 @@ What if we took a step back and rethought CAD? Maybe we could take these frustra
 
 ---
 
-# Where we've been
+## Where we've been
 
 Engineering design has a very long and storied history to which I can't do justice. If it's something you're interested in, I'd highly recommend reading [The Engineering Design Revolution](http://cadhistory.net/) by David E. Weisberg, available online for free. Instead of retreading that ground, I'd like to focus on some of the key developments in the history of CAD. This is important: it gives context to the systems we use today, as well as perspective of what is needed to see any meaningful change in the future.
 
-## Sketchpad
+### Sketchpad
 
 Possibly the most amazing technical presentation I've seen is the demonstration of Ivan Sutherland's [*Sketchpad*](https://www.youtube.com/watch?v=6orsmFndx_o
 ) from 1963. It's incredible for so many reasons; what I find most extraordinary is that Sutherland came up with the concepts in Sketchpad without prior art, yet they are *still* fundamental to the CAD we use 60 years later:
@@ -86,19 +86,19 @@ Possibly the most amazing technical presentation I've seen is the demonstration 
 
 Yet this was running on a computer built in 1958, predating integrated circuits, with less than 300 bytes of memory! In the 60 years following Sutherland's thesis there were significant advancements in 3D representation and 2D drafting workflows, but you could easily make the argument that they are all derivative of Sutherland's work.
 
-## Abstracting the drafting process
+### Abstracting the drafting process
 
 As a natural extension of hand drafting and having much lower computational requirements, 2D CAD reigned supreme until the 90's. 2D CAD is ultimately a digital extension of traditional hand drafting, adding convenience features that takes much of the tedium out of the process: easily drawing arcs and straight lines, snapping to vertices, freely changing line styles, copy/paste, undo/redo, etc. These features add convenience to the process, but didn't fundamentally change it.
 
 Moving to 3D was the next natural step, as it trivialized the process of 3D projection. Instead of drawing a 2D view of your part, then manually projecting it to the top and right views, solid modelling allows you to directly work in 3D as your source of truth, guaranting the validity of your 3D representation. With a 3D source of truth, 2D views used in drafting can be trivially derived from this source. Solid modeling began to take off with the advent of intuitive parametric modeling environments introduced by PTC Pro/ENGINEER and further refined by SolidWorks.
 
-## Boundary Representation
+### Boundary Representation
 
 Boundary representation (b-rep) is the name of the game in 3D CAD. You can trace the usage of b-rep back to the start of 3D CAD itself. It's a natural way to describe 3D objects, in fact, mesh file formats used in non-CAD applications like games are technically a type of b-rep. A boundary representation, as the name implies, describes an object by defining its boundary in space. The difference between mesh formats used in games and solid models, is that mesh formats don't make any guarantees about solidity. A solid b-rep is [2-manifold](https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/model/manifold.html) at all points of the boundary surface. In addition, solid models generally make more use of continuous freeform surfaces instead of discrete triangular or quad facets.
 
 These continuous freeform surfaces can be generalized as "NURBS" or Non-Uniform Rational Basis Splines. A NURBS surface is essentially a net of splines that live in 3D space. These are a generalization of Bézier curves, which you might recognize from the [Utah Teapot](https://en.wikipedia.org/wiki/Utah_teapot). NURBS make it trivial for Industrial Designers to adjust the appearance and curvature continuity of 3D surfaces using only a handful of spline handles. In addition, NURBS are convenient to represent in parametric form - which ties in nicely with how b-rep geometry is internally represented, and they can be sampled to arbitrary precision which is needed for manufacturing.
 
-## Too Many File Formats
+### Too Many File Formats
 
 The *Initial Graphics Exchange Specification* (IGES) format is the oldest 3D CAD format that still sees regular use. It was created by the US Air Force to solve the problem of CAD interoperability between their subcontractors. For context, the format specification has an 80 ASCII character limit from the days of punchcards and terminals. At its inception, IGES did not have a concept of solidity: objects were a collection of freeform, conic, and planar surfaces that had no guarantees of being 2-manifold. Although seen as an "old" CAD standard, I find that its simplicity often means that models tranferred with the IGES format will often work when STEP fails. The IGES v4.0 specification [can be found on the NIST website](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir88-3813.pdf).
 
@@ -106,7 +106,7 @@ Perhaps the most well-known format in the CAD world is the ISO 10303 *Standard f
 
 The Parasolid format (*.x_b, *.x_t) gets an honorable mention here as possibly the most common proprietary (non-interchange)) format, born out of the Parasolid geometry kernel. CAD packages with the Parasolid kernel can communicate in this format natively. You can find the format specification by searching for the "Parasolid XT Format Reference".
 
-## Geometric Modeling Kernels
+### Geometric Modeling Kernels
 
 One of the key things to understand about the history of CAD software is the inextricable development of modeling kernels. These serve as the core library of a CAD application, and are what allow you to modify geometry while ensuring the resulting body is solid. More importantly, these kernels are able to represent intersections between parametric curved surfaces in a precise, non-faceted format. Previously (pre-1969) b-reps were represented with faceted meshes, and as such were lossy approximations of the intended geometry. A good analogy is the difference between a bitmap image of a circle, and a vector circle. A bitmap image has a fixed resolution, and operations such as scaling will reveal that it is not a precise representation of a circle, but rather a static grid of squares. Conversely, a vector circle can effectively be scaled up infinitely without appearing blocky because it is mathematically defined and can be resampled arbitrarily.
 
@@ -121,9 +121,7 @@ A b-rep geometry kernel is complex and fraught with edge cases. For this reason,
 * OnShape, a newcomer, licenses Parasolid. OnShape was recently bought by PTC.
 * All of these kernels can (to my knowledge) trace their heritage through ACIS and Parasolid to the first generation professional modeling kernel, Romulus, released in 1978. In turn, this can be traced back to BUILD, created in 1969 as part of Ian Braid's PhD thesis.
 
-## 
-
-# Where I hope we're headed
+## Where I hope we're headed
 
 I took a drafting class in High School, taught by the prototypical shop teacher and ex-draftsman. At the time I took the class, drafting was a historical curiosity and only existed as the vestige of an aging curriculum<sup>4</sup>. I enrolled because my dad was a draftsman-turned-IT-professional and wouldn't shut up about how he used to walk uphills both ways in the snow while using slide rules and t-squares as skis.
 
