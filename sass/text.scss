@@ -2,7 +2,7 @@
 
 body {
   font-family: "Goudy Bookletter 1911", serif;
-  font-size: 20px;
+  font-size: 16pt;
   //line-height: 1.7;
   padding: 2rem;
   min-height: 100vh;
@@ -12,17 +12,18 @@ body {
   max-width: 100%;
 }
 
-h1,
+h1 {
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: .05rem;
+  margin-top: 2em;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
-}
-
-h1 {
-  margin-top: 2em;
 }
 
 body {
