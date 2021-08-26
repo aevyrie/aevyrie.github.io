@@ -24,11 +24,7 @@ highlight_theme = "demain"
 
 [extra]
 
-nav = [
-  { name = "About", path = "/about/" },
-  { name = "Projects", path = "/projects/" },
-  { name = "Blog", path = "/blog/" },
-]
+nav = [{ name = "About", path = "/about/" }]
 
 katex_enable = true
 katex_auto_render = true

@@ -1,5 +1,7 @@
 +++
-title = "Hello"
+template = "blog.html"
+page_template = "blog-post.html"
+sort_by = "date"
 +++
 
-# a dilettante developer
+# An assortment of unrefined opinions on engineering & software
