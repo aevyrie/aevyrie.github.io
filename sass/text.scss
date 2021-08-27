@@ -1,9 +1,8 @@
 @import "./fonts.scss";
 
 body {
-  font-family: "Goudy Bookletter 1911", serif;
+  font-family: "Vollkorn", serif;
   font-size: 16pt;
-  //line-height: 1.7;
   padding: 2rem;
   min-height: 100vh;
 }
@@ -13,7 +12,6 @@ body {
 }
 
 h1 {
-  //font-style: italic;
   margin-top: 2em;
 }
 h1,
@@ -22,8 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: .05rem;
   font-weight: 600;
+  line-height: 1;
 }
 
 body {
@@ -46,7 +44,7 @@ body {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-  p, ul, ol, .post-preview, .content, h1, h2, h3, h4, h5, header {
+  p, ul, ol, .post-preview, .content, header {
     line-height: 1.7;
   }
   code {
@@ -70,22 +68,17 @@ code {
 a,
 a:visited {
   color: #000;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  //transition: all .1s;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-h1 a, h2 a, h3 a, nav a, header a,
-a:visited {
-  color: #000;
-  text-decoration: none;
-  //transition: all .1s;
+
+h1 a, h2 a, h3 a, nav a, header a{
+  font-weight: inherit;
 }
 
 a:hover { 
-  //background-position: 0 100%;
   color: var(--accent-color);
-  //border-radius: 0.2em;
 }
 
 main {
@@ -102,17 +95,6 @@ header {
   flex-direction: row;
 }
 
-a.profile-icon {
-  border: none;
-  height: 50px;
-  width: 50px;
-  position: relative;
-
-  img {
-    border-radius: 50%;
-  }
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -124,12 +106,19 @@ nav {
   }
 }
 
+div.summary {
+  color: #666;
+  line-height: 1.4;
+}
+
+div.link a {
+  font-style: italic;
+}
+
 hr {
   height: 1px;
   border: 0;
-  //border: solid 1px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2);;
   margin: 2rem 0;
 }
 
