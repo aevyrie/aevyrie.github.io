@@ -1,5 +1,5 @@
 +++
-title = "Rethinking CAD: Past, Present, and an Aspirational Future"
+title = "Rethinking CAD: Past, Present, and (an Aspirational) Future"
 draft = false
 [taxonomies] 
 tags = [ "CAD" ]
@@ -11,7 +11,7 @@ I started using 3D CAD as an intern 12 years ago, and have been using it profess
 
 However, I don't love the process of fighting with modeling software when hard-to-debug topological problems manifest. I don't love how absolutely *fragile* parametric CAD, and more generally B-reps, are. I really don't love that those things have been constants for decades, with no end in sight.
 
-This article, then, is the perspective of an experienced, frustrated CAD user. It's also aspirational. I hope to show you where we are, where we've been, and where I *hope* we're going.
+This is, then, the perspective of an experienced, frustrated CAD user. It's also aspirational. I hope to show you where we are, where we've been, and where I *hope* we're going.
 
 ---
 
@@ -21,11 +21,17 @@ This article, then, is the perspective of an experienced, frustrated CAD user. I
 
 ## Where we are
 
-Last year, I really began to question CAD. I like to think that sometime about 10 months ago, I experienced a feature-tree-breaking error for the 1,000th time. When that 999 rolled over, it dislodged something in my brain that was preventing me from acknowledging how infuriatingly exhausting it is. Why do we have to put up with this? Why can't we have nice things?
+A few years ago, I began to question CAD. I like to think that sometime a half-dozen projects ago, I experienced a feature-tree-breaking error for the 1,000th time. When that 999 rolled over, it dislodged something in my brain that was preventing me from acknowledging how infuriating it is. Why do we have to put up with this? Why can't we have nice things?
 
-It's no coincidence that at the same time, I was really starting to get into [Rust](https://www.rust-lang.org/) to satisfy my longtime curiosity of memory managed "systems" programming languages. Learning Rust and using GitHub in a real project for the first time gave me equal parts admiration for the complexity involved in shipping real software, and frustration at the stagnation in engineering CAD. One of Rust's former slogans was "Fast, Reliable, Productive - Pick Three", the idea being that Rust lets you do do things without the tradeoffs you might normally expect in your software. You *can* have nice things.
+It's no coincidence that around the same time, I was really starting to get into [Rust](https://www.rust-lang.org/) to satisfy my longtime curiosity of "systems" programming languages with manual memory management.<sup>2</sup> Learning Rust and using GitHub in a real open-source project for the first time gave me equal parts admiration from this glimpse into the complexity involved in shipping software, and frustration at the stagnation in engineering CAD. How had I never been exposed to source control? Testing? Continuous Integration!? One of Rust's former slogans was "Fast, Reliable, Productive - Pick Three", the idea being that Rust lets you do do things without the tradeoffs you might normally expect in your software. You *can* have nice things. There are so many "that's just the way it is" problems in mechanical design that could be solved with tools commonly used in software development. Can *we* have nice things too?
 
-As much as I see software engineers criticizing the state of their field, there is something to be said about their willingness to try new tools and develop processes to both prevent repeating mistakes, and automatically verify correctness. Not only that, but many of the most prominent tools and frameworks are free and open source, even in the commercial space! Despite the fact that you can draw parallels between the design process of digital and physical systems, the software tooling we use for mechanical design is downright archaic in comparison.
+As much as I see software engineers criticizing the their field, there is something to be said about their willingness to try new tools and develop processes that prevent repeated mistakes and automatically verify correctness. Not only that, but many of the most prominent tools and frameworks are free and open source, even in the commercial space! Despite the fact that there are many parallels between the design process of digital and physical systems, the software tooling we use for mechanical design is downright archaic in comparison.
+
+---
+
+2. Rust doesn't require manual memory management from the user, the compiler enforces borrowing rules and manages memory for you at compile time.
+
+---
 
 ### A cargo cult
 
